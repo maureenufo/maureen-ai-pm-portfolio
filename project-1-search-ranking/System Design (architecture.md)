@@ -1,0 +1,14 @@
+# System Architecture
+
+User Query
+    ↓
+Query Preprocessing
+    ↓
+BM25 Retriever  →   Lexical Ranking
+Embedding Retriever → Semantic Ranking
+    ↓                ↓
+Hybrid Comparator (optional)
+    ↓
+Top-k Ranked Results
+    ↓
+Replit UI
